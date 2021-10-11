@@ -4,12 +4,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "mock": "json-server __json_mock__/db.json --watch -p 3030"
   },
   "dependencies": {
+    "json-server": "^0.17.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
+    "@types/node": "^16.10.3",
+    "@types/qs": "^6.9.7",
     "@vitejs/plugin-vue": "^1.9.0",
     "typescript": "^4.4.3",
     "vite": "^2.5.10",
